@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Alura Challenge - Encriptador</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Logo Alura"></a>
+    </header>
+    <main>
+        <section class="container-left">
+            <textarea id="input" class="input" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="alert">
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="container-btn">
+                <button id="btnEncrypt" class="btn-encrypt" onclick="btnEncrypt()">Encriptar</button>
+                <button id="btnDecrypt" class="btn-decrypt" onclick="btnDecrypt()">Descencriptar</button>
+            </div>
+        </section>
+        <section class="container-right">
+            <div id="img" class="container-img">
+                <img src="img/munheco.png" alt="doll">
+                <p id="txtOne" class="txt-one">Ningún mensaje fue encontrado</p>
+                <p id="txtTwo" class="txt-two">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <p id="output" class="output" style="display: none;"></p>
+            <button id="btnCopy" class="btn-copy" style="display: none;" onclick="copy()">Copiar</button>
+        </section>
+    </main>
+    <footer>Desarrollado por Eduardo Favio Angulo Medina</footer>
+    <script src="main.js"></script>
+</body>
+</html>
